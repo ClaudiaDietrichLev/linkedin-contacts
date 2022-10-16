@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #f3f2f0;
+  --color-bg-card: white;
+  --color-button: #0b66c2;
+  --color-font: black;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+}
+
+.card {
+  margin: 0.5em;
+  padding-inline: 1em;
+  background-color: var(--color-bg-card);
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 2px;
+}
+
+.area-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
